@@ -1,0 +1,74 @@
+CodeFusion: Multi-Domain Programming Challenge
+(This idea came while selecting the Question1 domain)
+1. Brief Description
+    CodeFusion can be a hands-on coding event where participants tackle challenges across three distinct programming domains: 
+    web development, machine learning, and algorithm design. 
+    The event would be structured to be feasible and engaging, allowing participants to apply their skills practically and showcase their problem-solving abilities.
+
+2. Required Skills
+    ->Web Development: HTML, CSS, JavaScript, and frameworks (e.g., React, Angular).
+    ->Machine Learning: Python, data analysis, and libraries like scikit-learn, TensorFlow, PyTorch.
+    ->Algorithm Design: Proficiency in algorithms, data structures, and programming languages (e.g., Python, Java, C++).
+3. Format and Structure
+    Registration and Team Formation
+
+        Teams of 2-4 members with diverse skills register for the event.
+        Teams can self-form or be assigned based on skill profiles if needed.
+    Event Structure
+
+        Day 1: Kick-Off and Initial Challenge
+
+            Morning: Opening ceremony and problem statement presentation.
+            Provide detailed descriptions and requirements for each challenge (Web Development, Machine Learning, Algorithm Design).
+            Afternoon: Teams choose one challenge to start with and begin working.
+       
+        Day 2: Challenge Switching
+
+            Morning: Teams continue working on their initial challenge.
+            Afternoon: Teams switch to a different challenge.
+            Continue working with access to support channels for technical assistance.
+
+        Day 3: Final Work and Presentation
+
+            Morning: Finalize solutions for all challenges.
+            Afternoon: Teams prepare and deliver their presentations.
+            Each team presents their solutions, covering all three challenges.
+
+    Support and Resources
+
+        Technical Support: Provide online channels (e.g., Slack, Microsoft Teams) for real-time assistance during the event.
+        Resources: Access to required tools, datasets, and documentation.
+        Judging Criteria
+            Web Development: Usability, design, functionality, and responsiveness.
+            Machine Learning: Model accuracy, innovation, and practical applicability.
+            Algorithm Design: Efficiency, correctness, and optimality of solutions.
+         Prizes and Recognition
+             Awards for the best solutions in each challenge.
+            Certificates of participation for all teams.
+            Opportunities for top teams to present their solutions to industry professionals.
+
+
+4. Timeline and Logistics
+    Preparation Period:
+
+        One week before the event to distribute challenge details and guidelines.
+
+    Event Duration:
+        Day 1: Kick-off, start with initial challenge.
+        Day 2: Switch to the second challenge.
+        Day 3: Finalize and present solutions.
+    
+    Venue:
+        Provide a suitable location with workspace, internet access, and presentation facilities.
+        Ensure availability of refreshments and necessary equipment.
+    
+    Technical Support:
+        Have mentors or experts available online to assist with any issues during the event.
+5. Benefits
+    =>Skill Application: Practical experience in diverse programming domains.
+    =>Portfolio Development: Opportunity to work on comprehensive projects.
+    =>Networking: Connect with peers, mentors, and industry professionals.
+    =>Practical Experience: Real-world application of skills in a multi-faceted environment.
+
+
+This design aims to balance feasibility with the complexity of the challenges, ensuring a practical and engaging event for participants.

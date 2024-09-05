@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import './dashboard.css'; // Ensure to import your styles
 
 function Dashboard() {
   const [text, setText] = useState('');
@@ -8,7 +9,6 @@ function Dashboard() {
   const [currentSessionId, setCurrentSessionId] = useState(null);
   const navigate = useNavigate();
 
-  // Fetch sessions when the component loads
   useEffect(() => {
     const token = localStorage.getItem('token');
     if (!token) {
@@ -18,7 +18,6 @@ function Dashboard() {
     }
   }, [navigate]);
 
-  // Function to fetch sessions from the backend
   const fetchSessions = async (token) => {
     try {
       const response = await fetch('http://localhost:5000/sessions', {
@@ -31,7 +30,6 @@ function Dashboard() {
     }
   };
 
-  // Function to handle sending a message
   const handleSend = async () => {
     if (!currentSessionId) return alert('Please select or create a session first.');
     const token = localStorage.getItem('token');
@@ -52,7 +50,6 @@ function Dashboard() {
     }
   };
 
-  // Function to create a new session
   const handleNewSession = async () => {
     const token = localStorage.getItem('token');
     try {
@@ -73,7 +70,6 @@ function Dashboard() {
     }
   };
 
-  // Function to handle clicking on a session
   const handleSessionClick = async (session) => {
     setCurrentSessionId(session._id);
     const token = localStorage.getItem('token');
@@ -88,32 +84,31 @@ function Dashboard() {
     }
   };
 
-  // Function to handle logout
   const handleLogout = () => {
     localStorage.removeItem('token');
     navigate('/');
   };
 
   return (
-    <div style={{ display: 'flex' }}>
-      <div style={{ width: '20%', borderRight: '1px solid #ccc', padding: '10px' }}>
+    <div className="container">
+      <div className="sidebar">
+        <h3>Your Sessions</h3>
         <button onClick={handleNewSession}>New Session</button>
         <ul>
           {sessions.map(session => (
             <li
               key={session._id}
-              style={{ cursor: 'pointer', margin: '5px 0' }}
               onClick={() => handleSessionClick(session)}
             >
               {session.name}
             </li>
           ))}
         </ul>
-        <button onClick={handleLogout}>Logout</button>
+        <button className="logout" onClick={handleLogout}>Logout</button>
       </div>
-      <div style={{ flex: 1, padding: '10px' }}>
+      <div className="main-content">
         <h2>Session Messages</h2>
-        <div style={{ border: '1px solid #ccc', padding: '10px', height: '300px', overflowY: 'scroll' }}>
+        <div className="message-box">
           {messages.map((msg, index) => (
             <div key={index}>{msg}</div>
           ))}
@@ -123,9 +118,8 @@ function Dashboard() {
           onChange={(e) => setText(e.target.value)}
           placeholder="Type your message here..."
           rows="3"
-          style={{ width: '100%' }}
         />
-        <button onClick={handleSend}>Send</button>
+        <button className="send-btn" onClick={handleSend}>Send</button>
       </div>
     </div>
   );

@@ -1,0 +1,108 @@
+/* Styling for the entire page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Container for the login and sign-up forms */
+  .login-signup-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  /* Common heading style */
+  h2 {
+    font-size: 24px;
+    color: #2980b9;
+    margin-bottom: 20px;
+  }
+  
+  /* Input fields styling */
+  input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  /* Buttons styling */
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #1a6da1;
+  }
+  
+  /* Sign-up and login section containers */
+  .section-container {
+    margin-bottom: 40px;
+  }
+  
+  p {
+    margin: 10px 0;
+    color: #7f8c8d;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 767px) {
+    .login-signup-container {
+      padding: 30px;
+      width: 90%;
+      max-width: none;
+    }
+  
+    h2 {
+      font-size: 22px;
+    }
+  
+    button {
+      padding: 10px;
+    }
+  
+    input {
+      padding: 10px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .login-signup-container {
+      padding: 40px;
+    }
+  
+    h2 {
+      font-size: 24px;
+    }
+  
+    button {
+      padding: 12px;
+    }
+  
+    input {
+      padding: 12px;
+    }
+  }
+  
